@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Jew | Contact </title>
+  <title>JEW | Home </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -197,15 +197,12 @@
         </li>
         <li>
           <a href="My_Gallery.html">
-            <i class="fa fa-camera"></i><span> My Gallery</span>
+            <i class="fa fa-camera"></i><span>My Gallery</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="Contact.html">
-            <i class="fa fa-globe"></i> <span>Contact</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+            <a href="Contact.html">
+            <i class="fa fa-globe"></i> <span> Contact</span>
           </a>
           <ul class="treeview-menu">
             <li><a href="Contact.html"><i class="fa fa-comment-o"></i>Direct Messages</a></li>
@@ -235,7 +232,6 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Contact</li>
       </ol>
     </section>
 
@@ -285,94 +281,56 @@
         </div>
         <!-- /.widget-user -->
       </div>
-      <div class="col-md-12">
-          <!-- DIRECT CHAT SUCCESS -->
-          <div class="box box-success direct-chat direct-chat-success">
-            <div class="box-header with-border">
-              <h3 class="box-title">Direct Chat</h3>
-
-              <div class="box-tools pull-right">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Widget: user widget style 1 -->
+          <div class="box box-widget widget-user-2">
+            <!-- Add the bg color to the header using any of the bg-* classes -->
+            <div class="widget-user-header bg-yellow">
+              <div class="widget-user-image">
+                <img class="img-circle" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
               </div>
+              <!-- /.widget-user-image -->
+              <h3 class="widget-user-username">NUMBER GUESS GAME  <sub class="tagh1"> (created by Jew) </sub></h3>
+              <h5 class="widget-user-desc">
+                WE have select a ramdom number between 1 and 100.<br>
+                See if you can guess it in 10 turns or less.<br>
+                WE'll tell you if your guess was too high or low.
+              </h5>
             </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <!-- Conversations are loaded here -->
-              <div class="direct-chat-messages">
-                <!-- Message. Default to the left -->
-                <div class="direct-chat-msg">
-                  <div class="direct-chat-info clearfix">
-                    <span class="direct-chat-name pull-left">yotsaphon_liu</span>
-                    <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-                  </div>
-                  <!-- /.direct-chat-info -->
-                  <img class="direct-chat-img" src="image/profile.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-                  <div class="direct-chat-text">
-                    You can message directly to me in this direct chat
-                  </div>
-                  <!-- /.direct-chat-text -->
-                </div>
-                <!-- /.direct-chat-msg -->
-
-                <!-- Message to the right -->
-                <div class="direct-chat-msg right">
-                  <div class="direct-chat-info clearfix">
-                    <span class="direct-chat-name pull-right">Doblly</span>
-                    <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                  </div>
-                  <!-- /.direct-chat-info -->
-                  <img class="direct-chat-img" src="image/frog.png" alt="Message User Image"><!-- /.direct-chat-img -->
-                  <div class="direct-chat-text">
-                    Sure!
-                  </div>
-                  <!-- /.direct-chat-text -->
-                </div>
-                <!-- /.direct-chat-msg -->
-              </div>
-              <!--/.direct-chat-messages-->
-
-              <!-- Contacts are loaded here -->
-              <div class="direct-chat-contacts">
-                <ul class="contacts-list">
-                  <li>
-                    <a href="#">
-                      <img class="contacts-list-img" src="image/profile.jpg" alt="User Image">
-
-                      <div class="contacts-list-info">
-                            <span class="contacts-list-name">
-                              Count Dracula
-                              <small class="contacts-list-date pull-right">2/27/2020</small>
-                            </span>
-                        <span class="contacts-list-msg">How have you been? I was...</span>
-                      </div>
-                      <!-- /.contacts-list-info -->
-                    </a>
-                  </li>
-                  <!-- End Contact Item -->
-                </ul>
-                <!-- /.contatcts-list -->
-              </div>
-              <!-- /.direct-chat-pane -->
+            <div class="box-footer no-padding">
+              <ul class="nav nav-stacked">
+                <li>
+                  <p>ENTER A GUESS :</p>
+                  <span class="input-group margin">
+                    <input type="text" class="form-control" id="input" name="guess" placeholder=" 1 - 100">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-info btn-flat" id="inputbutton">Guess it!</button>
+                    </span>
+                  </span>
+                    <div class="result"></div>
+                    <div class="resultright"></div>
+                    <div class="resultwrong"></div>
+                    <span><div class="previous"></div></span>
+                    <div class="counts"></div>
+                </li>
+              </ul>
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
-              <form action="#" method="post">
-                <div class="input-group">
-                  <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                      <span class="input-group-btn">
-                        <button type="submit" class="btn btn-success btn-flat">Send</button>
-                      </span>
-                </div>
-              </form>
             </div>
-            <!-- /.box-footer-->
           </div>
-          <!--/.direct-chat -->
+
+          <a href="indexguessgame.html">
+
+            <button type="button" class="btn btn-block btn-warning">Restrat the game</button>
+
+          </a>
+
+          <!-- /.widget-user -->
         </div>
-    </section>
+      </section>
+      </div>
+
     <!-- right col -->
-  </div>
-  <!-- /.row (main row) -->
-    <!-- /.content -->
   </div>
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark" style="display: none;">
@@ -406,6 +364,8 @@ integrity="sha256-GqCMs8eqcNJo0k1Zw3TBSve9COCvjIX45PYKJlH0urU=" crossorigin="ano
 <!-- AdminLTE App -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.18/js/adminlte.min.js"
 integrity="sha256-tCcp+FCxI8BTDa6VleHlINji0tuf+xrY76gX5Z/eqps=" crossorigin="anonymous"></script>
+
+<script src="cal.js"></script>
 
 </body>
 </html>

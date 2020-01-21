@@ -1,0 +1,35 @@
+h1{
+  font-family: Impact;
+  text-align: center;
+}
+
+body{
+  font-family: Impact;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.tagh1{
+
+  font-family: Dishonorable Mention;
+  font-size: 15px;
+  line-height: 70%;
+}
+
+.previous{
+  padding-left: 3%;
+  color: rgb(255, 255, 255);
+  font-family: Impact;
+  background-color: black;
+}
+
+.resultwrong{
+  font-family: Impact;
+  background-color: lightcoral;
+}
+
+.resultright{
+  font-family: Impact;
+  background-color: lightgreen;
+}
