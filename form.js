@@ -27,8 +27,8 @@ $('#save').click(() => {
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
-    }); 
-    
+    });
+
 })
 
 $('#reset').click(() => {
@@ -39,7 +39,7 @@ $('#reset').click(() => {
 });
 
 
-    
+
 db.collection('LTE demo').orderBy("Firstname").onSnapshot(doc =>{
     let table = $('tbody')[0]
     document.querySelectorAll("tbody tr").forEach(item => item.remove())
@@ -64,7 +64,7 @@ db.collection('LTE demo').orderBy("Firstname").onSnapshot(doc =>{
         }else{
             letter_buff +=  "x";
         }
-        
+
         }
 
         firstCell.textContent = item.data().Firstname
@@ -75,30 +75,27 @@ db.collection('LTE demo').orderBy("Firstname").onSnapshot(doc =>{
 
         google.charts.load("current", {packages:["corechart"]});
         google.charts.setOnLoadCallback(drawChart);
-      
-        var resultmale = male/(male + female + other)*100;
-        var resultfemale = female/(male + female + other)*100;
-        var resultother = other/(male + female + other)*100;
-              
+
         function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                   ['Task', 'All Time'],
-                  ['Male',resultmale],
-                  ['Female',resultfemale],
-                  ['Others',resultother],
+                  ['Male',male],
+                  ['Female',female],
+                  ['Others',other],
                 ]);
-        
+
                 var options = {
                   legend:{position: 'left'},
                   titleTextStyle: {color: 'black', fontSize: 30},
                   colors:['#EC00FF','#3055FF','#7EE182'] ,
                   pieHole: 0.5,
                   backgroundColor: '',
+                  is3D:'true',
                 };
-        
+
                 var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
                 chart.draw(data, options);
               };
-                
+
             })
 });
