@@ -41,7 +41,7 @@ $('#reset').click(() => {
 
 
 db.collection('LTE demo').orderBy("Firstname").onSnapshot(doc =>{
-    let table = $('tbody')[0]
+    let table = $('tbody.detail')[0]
     document.querySelectorAll("tbody tr").forEach(item => item.remove())
     var male = 0;
     var female = 0;
